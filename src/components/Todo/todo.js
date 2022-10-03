@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./todo.css";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
+import Popup from "../Popup/popup";
 
 function Todo() {
   const [userData, setuserData] = useState([]);
   const tableHeaders = ["UserID", "ID", "Title", "Completed"];
 
+  const [isOpen, setisOpen] = useState(false);
+  const [rowData, setrowData] = useState(0);
   // const itemsPerPage = 6;
   // const [currentItems, setCurrentItems] = useState(null);
   // const [pageCount, setPageCount] = useState(0);
@@ -21,6 +24,11 @@ function Todo() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  const togglePopup = (item) => {
+    setisOpen(!isOpen);
+    setrowData(item);
+  };
 
   // useEffect(() => {
   //   const endOffset = itemOffset + itemsPerPage;
@@ -43,13 +51,20 @@ function Todo() {
             ))}
           </tr>
           {userData.map((item, index) => (
-            <tr key={index}>
+            <tr
+              key={index}
+              onClick={() => {
+                togglePopup(item);
+              }}
+              className="todolist__table__row"
+            >
               <td>{item.userId}</td>
               <td>{item.id}</td>
               <td>{item.title}</td>
               <td>{item.completed}</td>
             </tr>
           ))}
+          {isOpen && <Popup handleClose={togglePopup} item={rowData} />}
         </table>
       </div>
       {/* <ReactPaginate

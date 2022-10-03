@@ -24,12 +24,12 @@ th {
 tr:nth-child(even) {
   background-color: #eea8a8;
 }
+.todolist__table__row {
+  cursor: pointer;
+}
 
 /* ------------------------Todo List Full Page CSS Styles-------------------------------- */
-.todoListPage__container{
+.todoListPage__container {
   width: 100%;
   height: 100%;
-}
-.todoListPage__todo{
-  
 }
