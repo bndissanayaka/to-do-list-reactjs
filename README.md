@@ -7,7 +7,8 @@
       2. List the todos in a table with pagination. => Half Completed 
       3. When click on a todo item, show the details in a popup using this
          API: https://jsonplaceholder.typicode.com/todos/<id>. Id should be passed in dynamically
-         for the API based on the clicked item. => Not Completed
+         for the API based on the clicked item. => Completed 
+         (passed raw data dynamically to the child component instead of retriving data again through the API)
 4. When click on “Logout”, direct the user to the Login screen.=> Completed
 
 Please note that in the answers I attempted implementing the pagination using react-paginate library but got an error of reading null while iteration over the array to map table items. Hence that part was commented.
