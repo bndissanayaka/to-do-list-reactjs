@@ -1,7 +1,5 @@
 import "./App.css";
-import Header from "./components/Header/header";
 import { Routes, Route } from "react-router-dom";
-import Todo from "./components/Todo/todo";
 import Login from "./components/Login/login";
 import TodoListPage from "./components/Todo/todoListPage";
 
