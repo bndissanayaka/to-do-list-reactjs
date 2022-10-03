@@ -12,4 +12,4 @@
          for the API based on the clicked item. => Not Completed
 4. When click on “Logout”, direct the user to the Login screen.=> Completed
 
-# Please note that in the answers I attempted implementing the pagination using react-paginate library but fot an error of reading null while iteration over the array to mao table items. Hence that part was commented.
+Please note that in the answers I attempted implementing the pagination using react-paginate library but fot an error of reading null while iteration over the array to mao table items. Hence that part was commented.
