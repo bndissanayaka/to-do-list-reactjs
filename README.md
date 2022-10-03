@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 1. Login screen - username: admin, password: admin. Show error message when different username/password combination entered => Completed
 2. Design a header with these menus.
       1. ToDo
