@@ -1,0 +1,35 @@
+.todolist__container {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.todolist__container__table {
+  width: 50%;
+  height: 25vh;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #eea8a8;
+}
+
+/* ------------------------Todo List Full Page CSS Styles-------------------------------- */
+.todoListPage__container{
+  width: 100%;
+  height: 100%;
+}
+.todoListPage__todo{
+  
+}
