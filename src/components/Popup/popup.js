@@ -22,7 +22,7 @@ function Popup(props) {
                 <th key={index}>{header}</th>
               ))}
             </tr>
-            <tr className="todolist__table__row">
+            <tr className="popuplist__table__row">
               <td>{props.item.userId}</td>
               <td>{props.item.id}</td>
               <td>{props.item.title}</td>
